@@ -1,0 +1,11 @@
+# docker-compose run --rm maven
+
+version: '3'
+services:
+  maven:
+    build: .
+    image: maven
+    container_name: maven
+    stdin_open: true 
+    tty: true
+    command: bash
