@@ -1,0 +1,10 @@
+<settings>
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <name>Other Mirror Repository</name>
+      <url>http://host.docker.internal:8081/repository/maven-test-proxy/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>

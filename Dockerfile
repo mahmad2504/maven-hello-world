@@ -10,6 +10,8 @@ WORKDIR /usr/src/mymaven
 RUN apt update; exit 0
 RUN apt-get --force-yes -y install nano
 
+COPY settings.xml  /root/.m2/
+
 # Run the application
 #ENTRYPOINT  ["bash"]
 
