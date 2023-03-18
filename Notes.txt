@@ -1,0 +1,64 @@
+
+#################################
+Everything is checkedin github
+#################################
+
+git clone https://github.com/mahmad2504/maven-hello-world.git
+
+############################################################
+To recreate Image (specially when settings.xml is changed)
+############################################################
+docker-compose build maven --no-cache
+####################
+Run maven container
+####################
+docker-compose run --rm maven
+
+###################################################
+When inside container following commands are available
+###################################################
+mvn clean 
+mvn deploy  
+mvn package
+mvn compile
+
+#######################
+pom.xml should have 
+#######################
+<distributionManagement> for snapshop and release repositories
+
+<distributionManagement>						
+	<snapshotRepository>					
+		<id>nexus</id>				
+		<name>maven-snapshots</name>				
+		<url>http://host.docker.internal:8081/repository/maven-snapshots/</url>				
+	</snapshotRepository>					
+	<repository>					
+		<id>nexus</id>				
+		<name>maven-releases</name>				
+		<url>http://host.docker.internal:8081/repository/maven-releases/</url>				
+	</repository>					
+</distributionManagement>	
+
+###############################
+Settings.xml should have 
+###############################
+configuration for mirror respository
+<mirrors>
+	<mirror>
+		<id>nexus</id>
+		<name>Other Mirror Repository</name>
+		<url>http://host.docker.internal:8081/repository/maven-test-proxy/</url>
+		<mirrorOf>*</mirrorOf>
+	</mirror>
+</mirrors>					
+
+authrntication for mirror repository for deployment
+<servers>
+	<server>
+		<id>nexus</id>
+		<username>mahmad</name>
+		<password>gsmp1000</url>
+	</server>
+</servers>
+
