@@ -43,7 +43,8 @@ pom.xml should have
 ###############################
 Settings.xml should have 
 ###############################
-configuration for mirror respository
+
+## configuration for mirror respository ## 
 <mirrors>
 	<mirror>
 		<id>nexus</id>
@@ -53,7 +54,7 @@ configuration for mirror respository
 	</mirror>
 </mirrors>					
 
-authrntication for mirror repository for deployment
+## authentication for mirror repository for deployment ## 
 <servers>
 	<server>
 		<id>nexus</id>
