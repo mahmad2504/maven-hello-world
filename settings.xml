@@ -7,4 +7,11 @@
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
+  <servers>
+    <server>
+      <id>nexus</id>
+      <username>mahmad</username>
+      <password>gsmp1000</password>
+    </server>
+  </servers>
 </settings>
