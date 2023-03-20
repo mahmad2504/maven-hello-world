@@ -3,15 +3,15 @@
     <mirror>
       <id>nexus</id>
       <name>Other Mirror Repository</name>
-      <url>http://host.docker.internal:8081/repository/maven-test-proxy/</url>
+      <url>http://134.86.96.23:8081:8081/repository/maven-central/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
   <servers>
     <server>
       <id>nexus</id>
-      <username>mahmad</username>
-      <password>gsmp1000</password>
+      <username>jenkins</username>
+      <password>jenkins</password>
     </server>
   </servers>
 </settings>

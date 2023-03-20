@@ -12,12 +12,12 @@
 	<snapshotRepository>
 		<id>nexus</id>
 		<name>maven-snapshots</name>
-		<url>http://host.docker.internal:8081/repository/maven-snapshots/</url>
+		<url>http://134.86.96.23:8081/repository/maven-snapshots/</url>
 	</snapshotRepository>
 	<repository>
 		<id>nexus</id>
 		<name>maven-releases</name>
-		<url>http://host.docker.internal:8081/repository/maven-releases/</url>
+		<url>http://134.86.96.23:8081/repository/maven-releases/</url>
 	</repository>
   </distributionManagement>
   
